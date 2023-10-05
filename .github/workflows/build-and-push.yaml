@@ -17,10 +17,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Metadata
-        id: kek
+        id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          vadim46/hello
+          docker.io/vadim46/hello
 
 
       - name: Build and Push
