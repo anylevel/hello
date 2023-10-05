@@ -31,5 +31,5 @@ jobs:
           context: ./docker-helloworld
           file: ./docker-helloworld/Dockerfile
           push: true
-          tags: stable
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }} 
