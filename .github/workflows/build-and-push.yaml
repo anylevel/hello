@@ -21,7 +21,7 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: docker.io/vadim46/hello
-          tags: type=semver,pattern={{version}}
+          tags: type=semver,pattern={{1.0.2}}
           flavor: latest=true
 
 
